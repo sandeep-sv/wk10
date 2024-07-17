@@ -35,7 +35,7 @@ async function connectToDatabase() {
         dbConnected = true;
     } catch (err) {
         console.error('Error connecting to Azure SQL Database:', err);
-        setTimeout(connectToDatabase, 5000); // Retry connection after 5 seconds
+        setTimeout(connectToDatabase, 10000); // Retry connection after 5 seconds
     }
 }
 
